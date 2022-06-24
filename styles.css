@@ -268,7 +268,10 @@ a:hover {
     /* flex-wrap: wrap; */
     text-align: justify;
     padding-top: 1rem;
-    column-width: 500px;
+    
+    /* splits into 2 columns, column-width doesn't apply on firefox */
+    columns: 2;
+    /* column-width: 500px; */
     gap: 30px;
 }
 
