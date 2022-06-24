@@ -269,9 +269,11 @@ a:hover {
     text-align: justify;
     padding-top: 1rem;
     
-    /* splits into 2 columns, column-width doesn't apply on firefox */
-    columns: 2;
-    /* column-width: 500px; */
+    /* splits into 2 columns, column-width doesn't apply on firefox
+    fix in refactor... works on chrome, display weird in Firefox.
+    need media queries?
+    columns: 2;*/
+    column-width: 500px;
     gap: 30px;
 }
 
